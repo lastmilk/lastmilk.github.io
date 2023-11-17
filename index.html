@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>背景图片网页</title>
+    <style>
+        body {
+            background-image: url("fnd.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 30px 60px;
+            margin: 20px;
+            border-radius: 100px;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+        }
+       
+    </style>
+</head>
+<body>
+    <a class="button" href="http://bbs.mchad.icu">进入</a>
+    <a class="button" onclick="openQQGroup()" >按钮2</a>
+    <a class="button" href="网站3的URL">按钮3</a>
+    <a class="button" href="网站4的URL">按钮4</a>
+<script>
+        function openQQGroup() {
+            var qqGroupLink = 'https://qun.qq.com/363139179'; // 替换成您的QQ群聊链接
+            window.location.href = qqGroupLink;
+        }
+</script>
+</body>
+</html>
