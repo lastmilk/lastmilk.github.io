@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>背景图片网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            background-image: url("fnd.jpg");
+            margin: 0;
+            padding: 0;
+            background-image: url('fnd.jpg');
             background-size: cover;
-            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
         }
-
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            background-color: rgba(128, 0, 128, 0.7);
+            padding: 20px;
+        }
         .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            border-radius: 100px;
-            background-color: black;
+            background-color: #800080;
             color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
             text-decoration: none;
-            font-family: Arial, sans-serif;
-            font-size: 25px;
+            text-align: center;
+            margin: 0 10px;
+            transition: all 0.3s ease;
         }
-       
+        .button:hover {
+            background-color: #660066;
+        }
     </style>
+    <title>Button Page</title>
 </head>
 <body>
-    <a class="button" href="http://cflms.mchad.icu">进入论坛</a>
-    <a class="button" href=http://craftbbs.top >程哥的MC论坛</a>
-    <a class="button" href="网站3的URL">未完成</a>
-    <a class="button" href="网站4的URL">未完成</a>
-<script>
-        function openQQGroup() {
-            var qqGroupLink = 'https://qun.qq.com/363139179'; // 替换成您的QQ群聊链接
-            window.location.href = qqGroupLink;
-        }
-</script>
+    <div class="button-container">
+        <a class="button" href="http://cflms.mchad.icu">进入论坛</a>
+        <a class="button" href="http://craftbbs.top">MC论坛</a>
+        <a class="button" href="https://docs.qq.com/doc/DRk5IdklheU5GZFdV">论坛坛规</a>
+        <a class="button" href="http://bbs.mchad.icu">备用通道</a>
+    </div>
 </body>
 </html>
